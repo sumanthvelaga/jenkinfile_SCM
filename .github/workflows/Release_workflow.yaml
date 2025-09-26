@@ -5,9 +5,9 @@ jobs:
     runs-on: ubuntu-latest
   
     steps: 
-      - step: Create_files
+      - name: Create_files
         run: touch sample.txt
-      - step: list files 
+      - name: list files 
         run: ls 
-      - step: print_files 
+      - name: print_files 
         run: cat sample.txt  
