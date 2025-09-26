@@ -1,0 +1,15 @@
+name: main-release
+on: push 
+ release: 
+   [publish]
+ env: 
+   DOCKER_USER=test
+   DOCKER_PASS=test
+jobs: 
+  main_release:
+  name: build, test, deploy
+  runs-on: ubuntu-latest
+  steps: 
+  - uses: actions/checkout@v5
+  - name: list object
+    run:  ls 
