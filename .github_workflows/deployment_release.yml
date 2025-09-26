@@ -1,0 +1,12 @@
+name: deployment release
+on: push 
+jobs: 
+  sample job:
+  runs_on: ubuntu-latest
+  steps: 
+    - step: Create_files
+      run: touch sample.txt
+    - step: list files 
+      run: ls 
+    - step: print_files 
+      run: cat sample.txt  
