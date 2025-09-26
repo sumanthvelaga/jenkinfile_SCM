@@ -2,10 +2,10 @@ name: main-release
 on: 
  push:
  release: 
-   publish
- env: 
-   DOCKER_USER: test
-   DOCKER_PASS: test
+   type: [publish]
+env: 
+  DOCKER_USER: test
+  DOCKER_PASS: test
 jobs: 
   main_release:
     name: build test deploy
