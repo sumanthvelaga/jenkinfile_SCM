@@ -2,7 +2,8 @@ name: deployment release
 on: push 
 jobs: 
   sample job:
-  runs_on: ubuntu-latest
+    runs_on: ubuntu-latest
+  
   steps: 
     - step: Create_files
       run: touch sample.txt
