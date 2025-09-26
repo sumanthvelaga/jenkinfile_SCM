@@ -5,9 +5,10 @@ jobs:
     runs-on: ubuntu-latest
   
     steps: 
+      - uses: actions/checkout@v5
       - name: Create_files
-        run: touch sample.txt
-      - name: list files 
-        run: ls 
+        run: |
+        touch sample.txt
+        ls 
       - name: print_files 
-        run: cat sample.txt  
+        run: cat README.md  
