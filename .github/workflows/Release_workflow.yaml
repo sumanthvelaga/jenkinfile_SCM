@@ -1,7 +1,7 @@
 name: deployment release
 on: push 
 jobs: 
-  sample job:
+  sample_job:
     runs-on: ubuntu-latest
   
     steps: 
