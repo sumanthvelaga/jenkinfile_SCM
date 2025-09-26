@@ -1,5 +1,6 @@
 name: main-release
-on: push 
+on: 
+ push:
  release: 
    [publish]
  env: 
